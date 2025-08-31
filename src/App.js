@@ -69,12 +69,12 @@ function App() {
 
         const networkId = await web3Provider.getNetwork();
 
-        // Check if connected to Hyperion Testnet (chainId 2810)
-        if (networkId.chainId !== 133717) {
+        // Check if connected to zeta Testnet (chainId 7001)
+        if (networkId.chainId !== 7001) {
           setNetworkError({
             currentNetwork: networkId.name,
             currentChainId: networkId.chainId,
-            requiredChainId: 133717,
+            requiredChainId: 7001,
           });
           return;
         } else {
@@ -285,7 +285,7 @@ function App() {
     try {
       await window.ethereum.request({
         method: "wallet_switchEthereumChain",
-        params: [{ chainId: "0x20A55" }], // chainId for Hyperion Testnet: 133717
+        params: [{ chainId: "0x1B59" }], // chainId for Zeta Testnet: 7001
       });
     } catch (error) {
       // This error code indicates that the chain has not been added to MetaMask
@@ -304,17 +304,15 @@ function App() {
         method: "wallet_addEthereumChain",
         params: [
           {
-            chainId: "0x20A55",
-            chainName: "Hyperion Testnet",
+            chainId: "0x1B59",
+            chainName: "Zeta Testnet",
             nativeCurrency: {
-              name: "METIS",
-              symbol: "hMETIS",
+              name: "Zeta",
+              symbol: "ZETA",
               decimals: 18,
             },
-            rpcUrls: ["https://hyperion-testnet.metisdevops.link"],
-            blockExplorerUrls: [
-              "https://hyperion-testnet-explorer.metisdevops.link/",
-            ],
+            rpcUrls: ["https://zetachain-athens.g.allthatnode.com/archive/evm"],
+            blockExplorerUrls: ["https://athens.explorer.zetachain.com/"],
           },
         ],
       });

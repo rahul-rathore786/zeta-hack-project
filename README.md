@@ -2,7 +2,7 @@
 
 ## 🔗 Live Website
 
-- Visit the [live version](https://no-risk-pot-hyper.vercel.app/)
+- Visit the [live version](https://no-risk-zeta-pot.vercel.app/)
 
 - Presentation [Click Here](https://www.youtube.com/watch?v=MwpnkbAAaoQ)
 
@@ -117,17 +117,15 @@ frontend/
 
 ### Network
 
-- The dApp targets the Hyperion Testnet. If you are on another network, the app will prompt you to switch or add the network automatically.
-- You may need some test COIN on Hyperion Testnet to perform transactions.
+- The dApp targets the Zeta Testnet. If you are on another network, the app will prompt you to switch or add the network automatically.
+- You may need some test COIN on Zeta Testnet to perform transactions.
 
-## 📜 Deployed Contracts (Hyperion Testnet)
+## 📜 Deployed Contracts (Zeta Testnet)
 
 Contracts are already deployed. You can verify them on the explorer below:
 
-- Coin: `0xfe0C32da50e19c146df542e32FE6473a46bB0D63`
-  - Explorer: https://hyperion-testnet-explorer.metisdevops.link/address/0xfe0C32da50e19c146df542e32FE6473a46bB0D63
-- ZeroLossLottery: `0x4e5156FC83669B999FeC29981A5363CE6D1021b9`
-  - Explorer: https://hyperion-testnet-explorer.metisdevops.link/address/0x4e5156FC83669B999FeC29981A5363CE6D1021b9
+- Coin: `0xcfC913651a01e2421caeFA2bc296c5725De2391B`
+- ZeroLossLottery: `0xCAd6D54Ad9B3f3B7437579b240b4258F546174a8`
 
 > Note: The frontend reads addresses from `frontend/src/artifacts/addresses.json`.
 
